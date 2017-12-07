@@ -1,9 +1,129 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Crystals Game</title>
+	<title>RPG Game</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
 </head>
-<body>
+<body background="assets/images/starwarsBackground.jpg">
+<div class=maincontainer>	
+	<div class=row>
+		<div class= col-sm-8>
+			<h1 class="header">Starwars Game</h1> 
+		</div>		
+	</div>
+		<div class="row">
+			<div class= "col-sm-4">
+				<h3>
+					<strong>Opponent's Health </strong>
+					<span id="opponent-health"></span>
+				</h3>	
+			</div>
+			<div class= "col-sm-4">
+				<h3>
+					<strong>Your Health </strong>
+					<span id="player-health"></span>
+				</h3>
+			</div>		
+		</div>	
+	<div class="row">
+	<button id="attack-button" onclick="attack()">Hit em</button>
+	<button id="restart-button" hidden="true" onclick="restart()">Restart Game</button>
+	</div>
+	<br>
+<!-- Player 1 -->
+	<div class="row">
+		<div class="col-sm-3">
+			<div class="card" id="card1" style="width: 10rem;">
+				<img class="card-img-top" src="assets/images/yodaPlayer.jpg" alt="Card image cap">
+				<div class="panel panel-default">
+				  	<div class="panel-body" id="score"></div>
+				</div>
+				<div class="card-body">
+					<p class="card-text">Yoda</p>
+				</div>
+			</div>
+		</div>
+<!-- Opponent 1 -->
+		<div class="col-sm-3">
+			<div class="card" id="card2" style="width: 10rem;">
+				<img class="card-img-top" src="assets/images/darthVador.jpg" alt="Card image cap">
+			 	<div class="panel panel-default">
+			  		<div class="panel-body" id="score2">0</div>
+				</div>
+			    <p class="card-text">Darth Vador</p>
+			</div>
+		</div>
+<!-- Opponet 2 -->
+		<div class="col-sm-3">
+			<div class="card" id="card3" style="width: 10rem;">
+				<img class="card-img-top" src="assets/images/stormTrooper.jpg" alt="Card image cap">
+				 	<div class="panel panel-default">
+				  		<div class="panel-body" id="score3">0</div>
+					</div>
+				<div class="card-body">
+				    <p class="card-text">Stormtrooper</p>
+				</div>
+			</div>
+		</div>
+	<!-- Opponet 3 -->
+		<div class="col-sm-3">
+			<div class="card" id="card4" style="width: 10rem;">
+				<img class="card-img-top" src="assets/images/bobaFet.png" alt="Card image cap">
+		 			<div class="panel panel-default">
+		  				<div class="panel-body" id="score4">0</div>
+					</div>
+				<div class="card-body">
+		    		<p class="card-text">Boba Fet</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+<!-- Display Stats -->
+	
+	<div class="row">
+		<div class="col-sm-10">
+			<div class="card" id="strikeMessage1">
+				<div class="panel panel-default">
+			  		<div class="panel-body" id="score"></div>
+				</div>
+				<div class="card-body">
+			    	<p class="card-text">
+			    		<h4 id="game-message"></h4>
+			    	</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm-10">
+			<div class="card" id="strikeMessage2">
+				<div class="panel panel-default">
+			  		<div class="panel-body" id="hits"></div>
+				</div>
+				<div class="card-body">
+			    	<p class="card-text">
+			    		<h4 id="hits"></h4>
+			    	</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
 
 </body>
+
+<!-- jQuery -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+
+<!-- jPopper -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+
+<!-- BootStrap -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+
+<!-- Java Script game file -->
+<script src="assets/js/fight.js"></script>
+
 </html>

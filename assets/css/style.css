@@ -1,1 +1,129 @@
-style.css
+.maincontainer {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+.header {
+	margin-left: 0px;
+	align-content: center;
+	text-align: center;
+	font-size: 40px;
+	background-color: black;
+	color: white;	
+}
+
+#opponent-health {
+	position: relative;
+	font-weight: bold;
+	color: white;
+	margin-left: 4%;
+	background-color: black;
+}
+
+#player-health {
+	position: relative;
+	font-weight: bold;
+	color: white;
+	margin-left: 4%;
+	background-color: black;
+}
+
+#attack-button {
+	position: absolute;
+	width: 65%;
+	float: left;
+	margin-left: 4%;
+	font-weight: bold;
+	font-size: 30px;
+	color: red;
+}
+
+#restart-button {
+	position: relative;
+	float: left;
+	margin-left: 4%;
+	font-weight: bold;
+	font-size: 20px;
+}
+
+h3 {
+	font-weight: bold;
+	margin-left: 4%;
+	color: white;
+}
+
+h4 {
+	font-weight: bold;
+	margin-left: 4%;
+}
+
+br {
+	margin-bottom: 2px;
+}
+
+#card1 {
+	clear: both;
+	position: relative;
+	float: left;
+	text-align: center;
+	margin-left: 20px;
+	margin-top: 30px; 
+}
+
+#card2 {
+	position: relative;
+	float: left;
+	text-align: center;
+	margin-left: 0px;
+	margin-top: 30px; 
+}
+
+#card3 {
+	position: relative;
+	float: left;
+	text-align: center;
+	margin-left: 0px;
+	margin-top: 30px; 
+}
+
+#card4 {
+	position: relative;
+	float: left;
+	text-align: center;
+	margin-left: 0px;
+	margin-top: 30px; 
+}
+
+#hits {
+	font-size: 30px;
+	font-weight: bold;
+	text-align: center;
+	padding-top: 10px;
+	margin-bottom: 0px;
+	padding-bottom: 0px;
+}
+
+strong {
+	color: white;
+	background-color: purple;
+}
+
+#strikeMessage1 {
+	position: relative;
+	text-align: center;
+	font-size: 30px;]
+	margin-left: 20px;
+	max-width: 80%;
+}
+
+#strikeMessage2 {
+	position: relative;
+	text-align: center;
+	font-size: 30px;]
+	margin-left: 20px;
+	max-width: 80%;
+}
+#score {
+	text-align: center;
+
+}
